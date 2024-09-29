@@ -1,0 +1,10 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+Ensure no security groups allow ingress from 0.0.0.0/0 to port 22
+Web Service Instance - C3 EC2 instances should not have a public IPv4 address
+CloudTrail should be enabled and configured with at least one multi-Region trail that includes read and write management events
+VPC Security Groups allow all ingress and egress traffic which violates the AWS recommendation.
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+Restrict the IP range that can access the application server on port 22.
+Disable public ip ec2 and connect to ALB
+Limit the traffic on the Security Groups only allow 80 and 443 as well as reference the other security group for accessing AWS resource within VPC.

@@ -1,0 +1,6 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+It was detected: UnauthorizedAccess:EC2/SSHBruteForce
+ Attack Instance - C3 ec  is performing SSH brute force attacks against Web Service Instance - C3 (ec2-52-70-233-100.compute-1.amazonaws.com). Brute force attacks are used to gain unauthorized access to your instance by guessing the SSH password
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+follor by refer https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_concepts.html 
+To detect an unauthorized or unexpected activity in your AWS environment. GuardDuty analyzes and processes data from AWS CloudTrail event logs, AWS CloudTrail management events, AWS CloudTrail data events for S3, VPC flow logs, DNS logs
